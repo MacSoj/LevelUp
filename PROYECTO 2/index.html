@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Proyecto 2</title>
+
+    <!--Aparatado de estilos de botones -->
+    <style>
+        .botones {
+            background-color: #ffffff; 
+            border: 1px solid green;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    
+    /*BOTON DE INCREMENTAR */
+        .incrementar {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #008000;
+        }
+
+    /*BOTON DE REINICIAR */
+        .reiniciar {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #000000;
+        }
+
+    /*BOTON DE DISMINUIR */
+        .disminuir {
+         background-color: white; 
+         color: black; 
+        border: 2px solid #FF0000;
+        }
+        </style>
+</head>
+
+<body>
+<h5>PROYECTO 2</h5>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h3><center>CONTADOR</center></h3>
+    <div>
+        <center><h3 id="counter-label" style="font-size: 50px;">0</h3></center>
+    </div>
+    <center>
+        <div>
+            <button class="botones disminuir" onclick="disminuir();"> Disminuir </button>
+
+            <button class="botones reiniciar" onclick="resetear();">Reiniciar</button>
+            
+            <button class="botones incrementar" onclick="incrementar();">Incrementar</button>
+        </div>
+    </center>
+
+   <script src="proyecto2.js"></script> 
+</body>
+</html>
